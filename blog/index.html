@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Блог</title>
 </head>
-<body>
+<body class="blog-body">
     <header>
-        <nav>
+        <nav class="header-nav">
             <img src="./images//logo.svg" alt="Аватарка">
             <a href="#">Мой блог</a>
             <ul>
@@ -15,7 +16,7 @@
                 <li><a href="#">Frontend</a></li>
                 <li><a href="#">Backend</a></li>
             </ul>
-            <input type="search" placeholder="Поиск">
+            <input class="header-search"type="text" placeholder="Поиск">
         </nav>
     </header>
     
@@ -25,8 +26,8 @@
             <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
             <div>
                 <img src="./images//author_avatar.svg" alt="Аватар автора">
-                <p>Наталья Васильева</p>
-                <p>Разработчик</p>
+                <p class="author-name">Наталья Васильева</p>
+                <p class="author-job">Разработчик</p>
             </div>
             <article>
                 <img src="./images//image_article.png" alt="Картинка к сататье">
@@ -54,7 +55,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Все права защищены</p>
+        <p class="footer-copy">&copy; 2024 Все права защищены</p>
     </footer>
 </body>
 </html>
