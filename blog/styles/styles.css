@@ -1,0 +1,83 @@
+p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 38px;
+    margin: 0 0 30px 0;
+}
+
+header {
+    margin:0 0 69px 0;
+}
+
+main {
+    margin: 0 0 100px 0;
+}
+
+article p {
+    margin: 0 0 32px 0;
+}
+
+footer {
+    margin: auto 0;
+}
+
+.blog-body {
+    padding: 72px 180px;
+    background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    background-repeat:repeat;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.header-nav a {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-nav ul {
+    list-style: none;;
+    padding: 0;
+    margin: 0;;
+}
+
+.header-nav input {
+    background-color: rgba(31, 41, 55, 0.6);
+    border-radius: 16px;
+    padding: 18px 10px;
+}
+
+.date {
+    margin: 0 0 14px 0;
+}
+
+.author {
+    margin: 0 0 28px 0;
+}
+
+.author-name {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.author-job {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.article-image {
+    margin: 0 0 69px 0;
+}
+
+.footer-copy {
+    margin: auto 0;
+    font-size: 16px;
+    line-height: 28px;
+}
