@@ -11,30 +11,24 @@
         <section>
             <h1>Регистрация</h1>
             <p>Уже есть аккаунт? <a href="#">Войти</a></p>
-        <form action="">
-            <select name="company" id="company">
-                <option value="1" selected >Мой компания</option>
-                <option value="2">Не мой компания</option>
-            </select>
-            <div>
-                <label for="firstname">Имя</label>
-                <input type="text" name="firstname" id="firstname" placeholder="Ваше имя" />
-            </div>
-            <div>
-                <label for="lastname">Фамилия</label>
-                <input type="text" name="lastname" id="lastname" placeholder="Ваше фамилия" />
-            </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Ваш email" />
-            </div>
-            <button type="submit">Зарегистрироваться</button>
-            <div>  
-                <input type="checkbox" name="accpt" id="accpt" />
-                <label for="accpt">Я прочитал и принимаю</label> 
-            </div>
-            <a href="#">Условия использования</a>
-        </form>
+            
+            <form action="">
+                <select class="item-form" name="company" id="company">
+                    <option value="1" selected >Мой компания</option>
+                    <option value="2">Не мой компания</option>
+                </select>
+                <div class="form-name-block">
+                <input class="item-form input input-firstname" type="text" name="firstname" id="firstname" placeholder="Имя" />
+                <input class="item-form input input-lastname" type="text" name="lastname" id="lastname" placeholder="Фамилия" />
+                </div>
+                <input class="item-form input" type="email" name="email" id="email" placeholder="E-mail" />
+                <button class="item-form" type="submit">Зарегистрироваться</button>
+                <div class="item-form form-footer">  
+                    <input type="checkbox" name="accpt" id="accpt" />
+                    <label for="accpt">Я прочитал и принимаю</label> 
+                    <a class="item-form" href="#">Условия использования</a>
+                </div>
+            </form>
         </section>
     </main>
 </body>
