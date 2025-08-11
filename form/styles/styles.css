@@ -1,45 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: 
     linear-gradient(90deg, #F39494, #F39494), 
     linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%),
     linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%);
     font-family: 'Open Sans', sans-serif;
+    size: 36px;
+    height: 100vh;
     color: #333333;
 }
-
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section {
-    background-color: #FFFFFF;
+    background-color: #FFFEFE;
+    border-radius: 10px;
     font-weight: 400;
+    width: 582px;
+    padding: 73px 92px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 22px;
 }
 
 h1 {
     font-weight: 700;
     font-size: 36px;
+    line-height: 100%;
 }
 
 p {
     font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 47px;
     color: #666666;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    gap: 22px;
 }
 
 select, option {
     font-weight: 600;
     font-size: 16px;
+    width: 100%;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    padding: 9px 11px;
 }
 
-label {
+input::placeholder {
     font-size: 16px;
-    color: #999999;
+    font-style: italic ;
 }
 
 button {
     background-color: #089FE0;
     color: #FFFFFF;
     font-size: 18px;
+    border: none;
+    border-radius: 5px;
 }
 
 #accpt {
     font-size: 14px;
+    line-height: 100%;
     color: #666666;
 }
 
@@ -49,4 +87,36 @@ a {
 
 a:last-child {
     font-size: 14px;
+    line-height: 100%;
 }
+
+.item-form {
+    width: 100%;
+    flex: 1 1 100%;
+    height: 44px;
+}
+
+.input {
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 11px;
+    height: 44px;
+} 
+
+.form-name-block {
+    display: flex;
+    gap: 0 1px;
+}
+.input-firstname {
+    width: 197px;
+    flex:1 1 197px;
+} 
+.input-lastname {
+    width: 197px;
+    flex:1 1 197px;
+} 
+
+/* .form-footer {
+
+} */

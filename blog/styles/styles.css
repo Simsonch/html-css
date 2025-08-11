@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 p {
     font-size: 20px;
     line-height: 32px;
@@ -11,10 +21,22 @@ h1 {
 
 header {
     margin:0 0 69px 0;
+    width: 1440px;
 }
 
 main {
     margin: 0 0 100px 0;
+    width: 1440px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 article p {
@@ -22,6 +44,7 @@ article p {
 }
 
 footer {
+    width: 1440px;
     margin: auto 0;
 }
 
@@ -29,11 +52,22 @@ footer {
     padding: 72px 180px;
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
     background-repeat:repeat;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 100%;
     font-size: 16px;
     color: #FFFFFF;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 70px
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
 
 .header-nav a {
@@ -43,23 +77,44 @@ footer {
 }
 
 .header-nav ul {
-    list-style: none;;
+    list-style: none;
     padding: 0;
-    margin: 0;;
+    margin: 0;
+    display: flex;
+    gap: 40px;
 }
 
 .header-nav input {
     background-color: rgba(31, 41, 55, 0.6);
     border-radius: 16px;
     padding: 18px 10px;
+    margin-left: auto;
 }
 
 .date {
     margin: 0 0 14px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
 }
 
 .author {
     margin: 0 0 28px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 214px;
+    height: 53px;
+}
+.author img {
+    width: 50px;
+    height: 50px;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px
 }
 
 .author-name {
@@ -74,9 +129,16 @@ footer {
 
 .article-image {
     margin: 0 0 69px 0;
-}
+    width: 896px;
+    height: 594px;
+    border-radius: 5px;
 
+}
+.article-text {
+    width: 708px;
+}
 .footer-copy {
+    text-align: center;
     margin: auto 0;
     font-size: 16px;
     line-height: 28px;
