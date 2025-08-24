@@ -9,7 +9,7 @@ function getHello(lang) {
         case "fr":
             return "Bonjour";
         case "de":
-            return "Hallo";
+            return "Gutten tag";
         default:
             return "Привет";
     }
