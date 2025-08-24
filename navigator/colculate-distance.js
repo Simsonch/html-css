@@ -1,17 +1,17 @@
 // Текущее местоположение (например, Москва)
-    const currentLat = 55.7558;
-    const currentLon = 37.6173;
+    const addressLat = 55.7558;
+    const addressLong = 37.6173;
     
     // Точка назначения (например, Санкт-Петербург)
-    const destLat = 59.9343;
-    const destLon = 30.3351;
+    const positionLat = 59.9343;
+    const positionLong = 30.3351;
     
     // Расчет расстояния
     const DEGREE_TO_KM = 111.32;
     
     // Вычисляем разницу в координатах
-    const deltaLat = (currentLat - currentLon) * DEGREE_TO_KM;
-    const deltaLon = (destLon - currentLon) * DEGREE_TO_KM * Math.cos((currentLat + destLat) * Math.PI / 360);
+    const deltaLat = (positionLat - addressLat) * DEGREE_TO_KM;;
+    const deltaLon = (positionLong - addressLong) * DEGREE_TO_KM * Math.cos((addressLat + positionLat) * Math.PI / 360);
     
     // Вычисляем расстояние по теореме Пифагора (диагональ прямоугольника)
     const distance = Math.sqrt(deltaLat * deltaLat + deltaLon * deltaLon);
