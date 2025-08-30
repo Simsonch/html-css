@@ -11,9 +11,231 @@
     <link rel="stylesheet" href="styles/components.css">
     <title>Finio</title>
 </head>
-<body>
+<body class="body">
+    <header class="header ">
+        <div class="header-wrapper wrapper">
+            <a href="#" class="header-logo">
+                <img src="images/logo.svg" alt="Логотип">
+            </a>
+            <nav>
+                <ul class="header-menu">
+                    <li class="header-menu__item">
+                        <a href="#">Возможности</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Тарифы</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li class="header-menu__item">
+                        <a href="#">Поддержка клиентов</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button button__secondary header-button__login">
+                Личный кабинет
+            </button>
+            <button class="button header-button__menu">
+                <img src="images/menu-button.svg" alt="Кнопка меню">
+            </button>
+        </div>
+        <div class="header-body wrapper">
+                <div>
+                    <h1 class="header-body__h1 margin-bottom_40">Простой финансовый учёт для продавцов на маркетплейсах</h1>
+                    <button class="button button__secondary margin-bottom_80">
+                        Попробовать 14 дней бесплатно
+                    </button>
+                    <div>
+                        <img src="./images/markets-group.svg" alt="Логотипы маркет плейсов" />
+                    </div>
+                </div>
+                <div class="header-body_image">
+                    <img style="width: 100%" src="./images/laptop.png" alt="Картинка macbook">
+                </div>
+            </div>
+       <div class="header-footer wrapper">
+            <div class="header-footer__item">
+                <img src="./images/sircle-graph.svg" alt="Анализ прибыли по товарам и брендам">
+                <p class=" header-footer__p">Анализ прибыли по товарам и брендам</p>
+            </div>
+            <div class="header-footer__item">
+                <img src="./images/sircle-auto.svg" alt="Автоматический учёт доходов Wildberries">
+                <p class=" header-footer__p">Автоматический учёт доходов Wildberries</p>
+            </div>
+            <div class="header-footer__item">
+                <img src="./images/sicle-rub.svg" alt="От 990 рублей в месяц с полным функционалом">
+                <p class=" header-footer__p">От 990 рублей в месяц с полным функционалом</p>
+            </div>
+       </div>
+    </div>
+    </header>  
+       
+   <section class="section">
+        <div class="section-wrapper wrapper wrapper_border-bottom">
+           <div class="desc-section">
+                <h3 class="desc-section__h3">Предотвращайте кассовые разрывы</h3>
+                <p class="desc-section__p">Заранее планируйте предстоящие платежи и поступления средств. Тем самым, вы избежите неприятной ситуации с нехваткой средств на счетах</p>
+           </div>
+            <div class="section__img">
+                <img width="100%" src="./images/balance.png" alt="Граффик баланса">
+           </div> 
+        </div>
+    </section>
     <section class="section">
-        <dib class="section-wrapper">
+        <div class="section-wrapper wrapper wrapper_border-bottom">
+            <div class="section__img">
+                <img width="100%" src="./images/report.png" alt="Отчет">
+           </div> 
+           <div class="desc-section">
+                <h3 class="desc-section__h3">Отчёты о прибыли и убытках всегда под рукой</h3>
+                <p class="desc-section__p">Получите полную информацию о состоянии вашего бизнеса, включающую все необходимые показатели для принятия правильных решений</p>
+           </div>
+        </div>
+    </section>
+     <section class="section">
+        <div class="section-wrapper wrapper wrapper_border-bottom">
+           <div class="desc-section">
+                <h3 class="desc-section__h3">Какие товары приносят прибыль</h3>
+                <p class="desc-section__p">Находите точки роста, делайте упор на рентабельные товары и увеличивайте свой доход</p>
+           </div>
+            <div class="section__img">
+                <img width="100%" src="./images/gain.png" alt="Анализ прибыли">
+           </div> 
+        </div>
+    </section>
+     <section class="section">
+        <div class="section-wrapper wrapper wrapper_border-bottom">
+            <div class="section__img">
+                <img width="100%" src="./images/table.png" alt="Анализ расходов">
+           </div> 
+           <div class="desc-section">
+                <h3 class="desc-section__h3">Сокращайте лишние расходы</h3>
+                <p class="desc-section__p">Анализируйте расходы, убирать ненужные издержки и находите возможности повышать прибыльность бизнеса</p>
+           </div>
+        </div>
+    </section>
+     <section class="section bg_secondary">
+        <div class="wrapper">
+            <div class="header-section">
+                 <h2 class="header-section__title color-text_secondady">
+                    Экономьте время и нервы на учете
+                </h2>
+                <p class="header-section__subtitle color-text_sextiary">
+                    Автоматическая синхронизация данных с маркетплейсов позволит вам мгновенно получать все важный показатели бизнеса на одном экране. А с помощью мобильной версии вы сможете вносить расходы всего пару кликов
+                </p>
+            </div>
+            <div class="body-section">
+                <button class="button button__secondary header-button__login">
+                        Попробовать 14 дней бесплатно
+                </button>
+                <div class="equal-imgs">
+                     <div class="equal-imgs__item-left">
+                            <img width="100%" src="./images/exel.png" alt="Эксель" />
+                    </div>
+                    <div class="equal-imgs__itemtem">
+                            <img width="100%" src="./images/report-equal.png" alt="Сравнение отчета">
+                    </div>
+                    <button class="button-circle button-equal">
+                        <img src="./images/chevron-left.svg" alt="Стрелка влево">
+                        <img src="./images/chevron-rght.svg" alt="Стрелка вправо">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-wrapper wrapper wrapper_border-bottom">
+            <div class="card-wrapper">
+                <div class="card-secondary">
+                    <div class="header-card header-card_heigth">
+                        <div class="header-card__img">
+                            <img width="100%" src="./images/server.svg" alt="Картинка сервера">
+                        </div>
+                        <h3 class="header-card-secondary__title">
+                            Надёжные сервера на территории России
+                        </h3>
+                        <p class="header-card__subtitle">
+                            Никакие события не скажутся на бесперебойной работе сервиса. 
+                        </p>
+                    </div>
+                </div>
+                <div class="card-secondary">
+                    <div class="header-card header-card_heigth">
+                        <div class="header-card__img">
+                            <img width="100%" src="./images/ssl.svg" alt="Картинка ssl">
+                        </div>
+                        <h3 class="header-card-secondary__title">
+                            Используем 256-битное SSL-шифрование
+                        </h3>
+                        <p class="header-card__subtitle">
+                            Ваши данные не могут быть перехвачены, даже при использовании открытых Wi-Fi сетей
+                        </p>
+                    </div>
+                </div>
+                <div class="card-secondary">
+                    <div class="header-card header-card_heigth">
+                        <div class="header-card__img">
+                            <img width="100%" src="./images/security.svg" alt="Картинка защиты">
+                        </div>
+                        <h3 class="header-card-secondary__title">
+                            Не передаём ваши данные 3-им лицам
+                        </h3>
+                        <p class="header-card__subtitle">
+                            Все данные о доходах и расходах компании видны только вам и тем, кому вы открыли доступ 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="section">
+        <div class="wrapper">
+            <div class="header-section">
+                 <h2 class="header-section__title">
+                    Мобильная версия
+                </h2>
+                <p class="header-section__subtitle">
+                    Пользоваться всем функционалом сервиса удобно в любом месте и с любых устройств
+                </p>
+            </div>
+            <div class="body-section">
+                <div class="equal-imgs">
+                     <div class="equal-imgs__item">
+                            <img width="100%" src="./images/mobile-version.png" alt="Мобильная версия" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-wrapper wrapper-secondary wrapper_border-bottom bg_secondary">
+                <div class="section__img section__img_heigth">
+                    <img width="100%" src="./images/is-love.png" alt="Мы о вас заботимся">
+                </div> 
+                <div class="desc-section">
+                        <h3 class="desc-section__h3 color-text_secondady">Поддержка клиентов</h3>
+                        <p class="desc-section__p color-text_sextiary">Мы всегда готовы ответить на любые вопросы в онлайн чате или по телефону.</p>
+                        <div class="social-networks">
+                            <div class="social-networks__item color-text_secondady">
+                                <img src="./images/telegram.svg" alt="Telegram">
+                                <p>Telegram Finio</p>
+                            </div>
+                            <div class="social-networks__item color-text_secondady">
+                                <img src="./images/watssapp.svg" alt="Watssapp">
+                                <p>WhatsApp Finio</p>
+                            </div>
+                            <div class="social-networks__item color-text_secondady">
+                                <img src="./images/email.svg" alt="Email">
+                                <p>Email Finio</p>
+                            </div>
+                        </div>
+                        <p class="desc-section__p color-text_sextiary">Кроме того, мы готовы помочь вам с переносом данных из других сервисов или Excel.</p>
+                </div>
+        </div>
+    </section>
+   <section class="section">
+        <div class="wrapper">
             <div class="header-section">
                 <h2 class="header-section__title">
                     Тарифы
@@ -50,7 +272,7 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <button class="button">Бесплатно 14 дней</button>
+                    <button class="button button__primary">Бесплатно 14 дней</button>
                 </div>
                 <div class="card">
                     <div class="header-card">
@@ -80,7 +302,7 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <button class="button">Бесплатно 14 дней</button>
+                    <button class="button button__primary">Бесплатно 14 дней</button>
                 </div>
                 <div class="card color-bg_secondady">
                     <div class="header-card">
@@ -110,10 +332,47 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <button class="button button_secondary-color">Бесплатно 14 дней</button>
+                    <button class="button button__secondary">Бесплатно 14 дней</button>
                 </div>
-                
-        </dib>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="wrapper">
+            <div class="header-section">
+                 <h2 class="header-section__title">
+                   Отзывы
+                </h2>
+                <p class="header-section__subtitle">
+                    Пользоваться всем функционалом сервиса удобно в любом месте и с любых устройств
+                </p>
+            </div>
+            <div class="body-section">
+                <div class="body-section__item">
+                    <h3>Впервые за долгое время увидела свои расходы и доходы как на ладони.</h3>
+                    <div>Дана Валеева</div>
+                    <div>Продавец Wildberries</div>
+                </div>
+                    <div class="body-section__item">
+                        <div class="equal-imgs">
+                        <div class="equal-imgs__item">
+                                <img width="100%" src="./images/sailes.png" alt="Продовец" />
+                        </div>
+                    </div>
+                    <div>
+                         <button class="button-circle ">
+                            <img src="./images/chevron-left.svg" alt="Стрелка влево">
+                        </button>
+                    </div>
+                     <div>
+                         <button class="button-circle ">
+                            <img src="./images/chevron-rght.svg" alt="Стрелка вправо">
+                        </button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
     </section>
 </body>
 </html>
