@@ -7,13 +7,14 @@ function converter(summ, currancy, relustCurrency) {
     }
 
     if (currancy === "RUB" && rateRubTo[relustCurrency]) {
-        return relustCurrency + (summ * rateRubTo[relustCurrency]);
+        return summ / rateRubTo[relustCurrency];
     } else if(relustCurrency === "RUB" && rateRubTo[currancy]){
-        return relustCurrency + (summ / rateRubTo[currancy]);
+        return summ * rateRubTo[currancy];
     }
-        return `нет курса рубль к ${relustCurrency}`
+        return null;
 }
 
 console.log(converter(100, "EUR", "RUB"));
 console.log(converter(100, "RUB", "KZ"));
 console.log(converter(100, "KZ", "RUB"));
+console.log(converter(1000, "RUB", "$"));
