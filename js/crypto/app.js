@@ -12,7 +12,3 @@ function crypto(str) {
 function check(value, checksValue) {
     return crypto(checksValue) === value;
 }
-
-console.log(crypto("password")) //-> ssapdorw
-console.log(check("ssapdorw", "password")) //-> true
-console.log(check("ssapdorw", "wrong")) // -> false
