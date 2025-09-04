@@ -6,7 +6,7 @@ function checkArrayHasDate(array) {
             const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Month is 0-indexed
             const day = now.getDate().toString().padStart(2, '0');
 
-            const customFormat = `${year}-${month}-${day}`;
+            const customFormat = `${day}-${month}-${year}`;
             acc.push(customFormat);
         }
 
