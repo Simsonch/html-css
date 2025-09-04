@@ -4,7 +4,7 @@ const itemDell = (item) => item >= 5;
 function arrayClean(arr, fn) {
     let res = [];
     for (let i = 0; i < arr.length; i++) {
-        if (fn(arr[i])) {
+        if (!fn(arr[i])) {
             res.push(arr[i]);
         }
     }
