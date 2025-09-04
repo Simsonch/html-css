@@ -1,6 +1,6 @@
 function checkArrayHasDate(array) {
     return array.reduce((acc, cur) => {
-        if(isNaN(Date.parse(cur)) {
+        if(!isNaN(Date.parse(cur))) {
             const now = new Date(cur);
             const year = now.getFullYear();
             const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Month is 0-indexed
