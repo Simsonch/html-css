@@ -19,5 +19,15 @@ const toDoLists  {
     deleteTask: function(id) {
         this.tasks = this.tasks.filter(task => task.id !== id);
     },
-
+    updateTask: function(id, task) {
+        const index = this.tasks.findIndex(task => task.id === id);
+        if (index === -1) {
+            console.log("Задача не найдена");
+            return;
+        }
+        this.tasks[index] = {...this.tasks[index], ...task};
+    }
+    sortTaskToPriority: function() {
+        this.tasks.sort((a, b) => a.priority - b.priority);
+    }
 }
