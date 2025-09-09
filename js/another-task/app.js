@@ -38,7 +38,7 @@ const newTask = {
         name: ‘тест’, 
         description: ‘описание’,
         order: 0
-    }];
+    }],
 }
 
 const addNewTask = toDoLists.addTask.bind(newTask);
