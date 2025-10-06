@@ -18,3 +18,4 @@ const uniqueArr = arr.filter(obj => {
 
 console.log(uniqueArr);
 // Результат: [{ id: 1, name: "Вася" }, { id: 2, name: "Петя" }]
+clearTimeout
