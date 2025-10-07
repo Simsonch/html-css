@@ -1,17 +1,11 @@
 function checkargs(str) {
-    const dice = Number(str.substr(1))
-    if (str.substr(0) === "d" && typeof dice === "number") {
-        ;
-        return dice <= 20 && 
-        dice >= 2 && 
-        dice % 2 === 0;
-    }
-
+    const diceVariant = ["D4", "D6", "D8", "D10", "D12", "D16", "D20"];
+    return diceVariant.includes(str);
 }
 
 function dice(dice) {
     if(checkargs(dice)) {
-        return Math.floor(Math.random() * dice) + 1;
+        return Math.floor(Math.random() * dice.substr(1, dice.length -1)) + 1;
     }
 
     return 0;
