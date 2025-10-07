@@ -1,5 +1,17 @@
-function dice() {
-    return Math.floor(Math.random() * 6) + 1;
+function checkargs(str) {
+    if (str.substr(0) === "d") {
+        const dice = Number(str.substr(1));
+        return dice <= 20 && 
+        dice >= 2 && 
+        dice % 2 === 0;
+    }
+
 }
 
-console.log("You rolled a " + dice());
+function dice(dice) {
+    if(checkargs(dice)) {
+        return Math.floor(Math.random() * dice) + 1;
+    }
+
+    return 0;
+}
