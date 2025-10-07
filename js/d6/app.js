@@ -1,5 +1,5 @@
 function checkargs(str) {
-    if (str.match(/^\d+$/)) {
+    if (str.substr(0) === "d") {
         const dice = Number(str.substr(1));
         return dice <= 20 && 
         dice >= 2 && 
